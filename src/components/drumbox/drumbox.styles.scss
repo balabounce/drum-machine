@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    .drumbox {
+        display: flex;
+        background-color: #fff;
+        width: fit-content;
+        padding: 50px;
+        padding-right: 35px;
+        border: 5px solid rgb(90, 196, 245);
+        border-radius: 1%;
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            button {
+                width: 150px;
+                height: 100px;
+                box-shadow: 2px 4px 5px black;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .settings {
+            margin-left: 15px;
+            padding-left: 15px;
+            p {
+                margin-bottom: 3px;
+            }
+            .switcher {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 7px;
+                .switch-box {
+                    width: 25px;
+                    height: 25px;
+                    background-color: black;
+                    cursor: pointer;
+                } 
+                .checked {
+                    background-color: rgb(90, 196, 245);
+                }
+            }   
+        }
+    }
+
+}
